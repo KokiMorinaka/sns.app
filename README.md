@@ -1,6 +1,7 @@
 # README
 
-主な使用技術
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
 * Ruby3.1
 
