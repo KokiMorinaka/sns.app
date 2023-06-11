@@ -3,22 +3,22 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+主な使用技術
 
-* Ruby version
+* Ruby3.1
 
-* System dependencies
+* rails7
 
-* Configuration
+* docker
 
-* Database creation
+* mysql
 
-* Database initialization
+* CI/CD
 
-* How to run the test suite
+* 
 
-* Services (job queues, cache servers, search engines, etc.)
+* 
 
-* Deployment instructions
+* 
 
-* ...
+* 
