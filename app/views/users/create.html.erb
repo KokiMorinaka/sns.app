@@ -1,0 +1,24 @@
+<h1>ユーザー登録</h1>
+<div class="button-container">
+<%= form_with(model: @user, url: "http://localhost:3000/users") do |form| %>
+  <%= form.label :name, "ユーザー名" %>
+  <%= form.text_field :name %>
+
+<div class="button-container">  
+  <%= form.label :email, "メールアドレス" %>
+  <%= form.email_field :email %>
+
+<div class="button-container">
+  <%= form.label :password, "パスワード" %>
+  <%= form.password_field :password %>
+
+<div class="button-container"></div>
+  <%= form.label :password_confirmation, "パスワードの確認" %>
+  <%= form.password_field :password_confirmation %>
+
+  <%= form.submit "登録" %>
+<% end %>
+</div>
+</div>
+</div>
+</div>
