@@ -3,22 +3,24 @@
 <%= form_with(model: @user, url: "http://localhost:3000/posts") do |form| %>
   <%= form.label :name, "ユーザー名" %>
   <%= form.text_field :name %>
+</div>
 
 <div class="button-container">  
   <%= form.label :email, "メールアドレス" %>
   <%= form.email_field :email %>
+</div>
 
 <div class="button-container">
   <%= form.label :password, "パスワード" %>
   <%= form.password_field :password %>
+</div>
 
-<div class="button-container"></div>
+<div class="button-container">
   <%= form.label :password_confirmation, "パスワードの確認" %>
   <%= form.password_field :password_confirmation %>
+</div>
 
+<div class="button-container">
   <%= form.submit "登録" %>
 <% end %>
-</div>
-</div>
-</div>
 </div>
