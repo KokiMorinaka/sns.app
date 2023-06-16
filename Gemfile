@@ -37,6 +37,25 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 gem 'bcrypt', '~> 3.1.7'
 
+#　ログイン認証機能を追加する
+gem 'devise', '4.9.2'
+
+# 日本語表示するために追加
+gem 'devise-i18n', '1.11.0'
+
+gem 'orm_adapter', '0.5.0'
+
+gem 'responders', '3.1.0'
+
+gem 'warden', '1.2.9'
+
+gem 'net-imap', '0.3.6'
+
+gem 'racc', '1.7.1'
+
+gem 'spring', '4.1.1'
+
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
