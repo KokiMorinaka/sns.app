@@ -71,7 +71,7 @@ body {
   
   .link-button {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #007bffd1;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -82,7 +82,7 @@ body {
   
   .link-delete-button {
     display: inline-block;
-    background-color: #cc361f;
+    background-color: #1fcc44c8;
     font-size: 17px;
     color: #fff;
     padding: 10px 20px;

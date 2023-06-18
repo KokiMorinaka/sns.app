@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   root to: "users#index"
 
   resources :posts, only: [:index, :new, :create, :edit, :update, :destroy]
-  
+  resources :users, only: [:new, :create]
+  resources :sessions, only: [:new, :create, :destroy]
 end
