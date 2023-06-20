@@ -90,7 +90,7 @@ GEM
       activesupport (>= 5.0)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
-    importmap-rails (1.1.6)
+    importmap-rails (1.2.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.6.0)
@@ -110,7 +110,7 @@ GEM
     marcel (1.0.2)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.18.0)
+    minitest (5.18.1)
     msgpack (1.7.1)
     mysql2 (0.5.5)
     net-imap (0.3.6)
@@ -123,8 +123,6 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.15.2-aarch64-linux)
-      racc (~> 1.4)
     nokogiri (1.15.2-arm64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -198,7 +196,6 @@ GEM
     zeitwerk (2.6.8)
 
 PLATFORMS
-  aarch64-linux
   arm64-darwin-22
 
 DEPENDENCIES
@@ -228,4 +225,4 @@ RUBY VERSION
    ruby 3.1.4p223
 
 BUNDLED WITH
-   2.3.26
+   2.4.14

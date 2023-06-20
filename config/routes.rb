@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  root to: "users#index"
+
+  authenticated :user do
+    root to: "users#index", as: :authenticated_root
+  end
 
   resources :posts, only: [:index, :new, :create, :edit, :update, :destroy]
-  resources :users, only: [:new, :create]
+  resources :users, only: [:index, :new, :create]
   resources :sessions, only: [:new, :create, :destroy]
 end
+

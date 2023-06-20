@@ -1,6 +1,6 @@
 <h1>ユーザー登録</h1>
 <div class="button-container">
-<%= form_with(model: @user, url: "http://localhost:3000/users") do |form| %>
+<%= form_with(model: @user, url: users_path) do |form| %>
   <%= form.label :name, "ユーザー名" %>
   <%= form.text_field :name %>
 
