@@ -2,7 +2,7 @@ class SessionsController < ApplicationController
 
   def new
     # ログインフォームを表示するビューを返す
-    #@user = User.new
+    @user = User.new
   end
 
   def create
