@@ -29,6 +29,6 @@
 <% end %>
 </div>
 
-<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+<%= link_to 'ログアウト', destroy_user_session_path, data: { turbo_method: :delete } %>
 
 <%= render "devise/shared/links" %>
