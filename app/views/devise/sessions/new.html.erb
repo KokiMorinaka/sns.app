@@ -1,14 +1,18 @@
-<h2>ログイン</h2>
+<div class="button-container">
+  <h1>ログイン</h1>
 
 <%= form_with model: @user, url: user_session_path do |f| %>
+
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.email_field :name, autofocus: true, autocomplete: "name" %>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placeholder: "名前", class: "form-field" %>
   </div>
 
   <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "学校用メールアドレス", class: "form-field" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "パスワード（６文字以上）", class: "form-field" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
@@ -19,11 +23,11 @@
   <% end %>
 
   <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= f.submit "ログイン", class: "submit-button font-bold" %>
   </div>
 
   <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
-
 <% end %>
+</div>
 
 <%= render "devise/shared/links" %>
