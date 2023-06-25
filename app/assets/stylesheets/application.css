@@ -58,14 +58,15 @@ body {
   }
 
   .form-container1{
-    max-width: 400px;
+    max-width: 350px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
     width: 800px;
-    height: 500px;
+    height: 600px;
+    font-size: 15px;
   }
   
   .form-input {
@@ -87,17 +88,22 @@ body {
   }
 
   .form-field {
-    width: 100%;
+    width: 20%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
-    margin-right: 20px;
+    margin: 10px auto;
+    margin-block-end: 30px;
   }
 
   .font-bold {
     font-weight: bold;
+    font-size: 15px;
+  }
+
+  .font-bold1 {
+    color: rgba(112, 107, 107, 0.965);
   }
 
   .submit-button {
@@ -110,6 +116,8 @@ body {
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 40px;
+    width: 200px;
   }
   
   .link-button {
@@ -142,4 +150,77 @@ body {
     margin-top: 10px;
   }
 
+  .actions {
+    text-align: center;
+  }
 
+  .layout {
+    background-color: #fff;
+  }
+
+/* ------------------ */
+/* 全体 */
+/* ------------------ */
+/* footer用にレイアウト調整 */
+
+.main-title{
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+/*フッターアイコン */
+
+#fixed-footer-menu {
+  position: fixed;
+  width: 100%;
+  bottom: 1px;
+  opacity: 1;
+  z-index: 100;
+}
+
+/* メニューを横並びにする */
+#fixed-footer-menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fff;
+}
+
+/* メニューの要素 */
+#fixed-footer-menu li {
+  justify-content: center;
+  align-items: center;
+  width: 20%; /* 要素が5つの場合（100/5） */
+  padding: 0;
+  margin: 0;
+  border-width: 0;
+  border-top: solid #b6b3b3;
+
+}
+
+/* メニューのボタン */
+#fixed-footer-menu li a {
+  color: #b6b3b3;
+  text-align: center;
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  padding: 10px 0px 0px 0px;
+  font-size: 8px;
+  text-decoration: none;
+}
+
+/* アイコンのサイズを調整 */
+.footer-icon {
+  font-size: 35px;
+  color: #b6b3b3;
+}
+
+.footer-icon1 {
+  font-size: 35px;
+  color:#7BC3B2;
+}
