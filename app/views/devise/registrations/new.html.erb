@@ -5,10 +5,6 @@
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.text_field :name, autofocus: true, autocomplete: "name", value: "", placeholder: "名前", class: "form-field" %>
-  </div>
-
-  <div class="field">
     <%= f.email_field :email, autocomplete: "email" , value: "", placeholder: "学校用メールアドレス", class: "form-field" %>
   </div>
 
@@ -26,4 +22,6 @@
 <% end %>
 </div>
 
+<div class="devise-position">
 <%= render "devise/shared/links" %>
+</div>
