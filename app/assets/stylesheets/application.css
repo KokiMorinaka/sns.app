@@ -15,6 +15,18 @@ body {
     text-decoration: none;
     padding: 20px 0;
   }
+
+  h2 {
+    color: #343a40;
+    text-align: center;
+    text-decoration: none;
+    padding: 40px 0;
+    font-size: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: oblique;
+    font-family: "MS Pゴシック";
+  }
   
   ul {
     list-style: none;
@@ -129,6 +141,34 @@ body {
     margin-top: 40px;
     width: 200px;
   }
+
+  .submit-button1 {
+    display: inline-block;
+    background-color:white;
+    color: #7BC3B2;
+    border: 1px solid rgba(210, 207, 207, 0.848);
+    filter: drop-shadow(3px 3px 3px rgb(153, 152, 152));
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 70px;
+    width: 250px;
+  }
+
+  .submit-button2 {
+    display: inline-block;
+    background-color:rgb(246, 244, 244);
+    color: #242525;
+    border: 1px solid rgba(210, 207, 207, 0.848);
+    filter: drop-shadow(3px 3px 3px rgb(153, 152, 152));
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 70px;
+    width: 250px;
+  }
   
   .link-button {
     display: inline-block;
@@ -153,6 +193,11 @@ body {
     margin-left: 10px;
     border: 1px solid;
     cursor: pointer;
+  }
+
+  .link-to{
+    margin-top: 70px;
+    color: #343a40;
   }
   
   .edit-delete-wrapper {

@@ -1,0 +1,17 @@
+<div class="button-container">
+
+<h2>windup</h2>
+<p>大学生は ”やりたい” がたくさんある</p>
+
+  <div class="actions">
+    <%= submit_tag "アカウント作成", class: "submit-button1 font-bold", onclick: "window.location.href='http://localhost:3000/users/sign_up'" %>
+  </div>   
+
+  <div class="actions">
+    <%= button_tag "ログイン", class: "submit-button2 font-bold", onclick: "window.location.href='http://localhost:3000/users/sign_in'" %>
+  </div>
+
+  <div class="link-to">
+  <%= link_to "登録せずに利用してみる", "http://localhost:3000/users/sign_in" %>
+  </div>
+</div>
