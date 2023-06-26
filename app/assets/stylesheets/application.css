@@ -172,13 +172,16 @@ body {
   
   .link-button {
     display: inline-block;
-    background-color: #007bffd1;
-    color: #fff;
+    background-color:#a8eadb;
+    color: black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    font-size: 20px;
+    width: 150px;
+    border: none;
   }
   
   .link-delete-button {

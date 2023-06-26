@@ -1,15 +1,15 @@
-<h1>新しい投稿</h1>
+<h1>新規wiip</h1>
 
-<%= form_with model: @post, class:"form-container" do |form| %>
+<%= form_with model: @post, class:"button-container" do |form| %>
 <div class="form-input">
 <%= form.label :title %> <%= form.text_field :title %>
 </div>
 
 <div class="form-input">
-<%= form.label :content %> <%= form.text_field :content %>
+<%= form.label :詳細 %> <%= form.text_field :content %>
 </div>
 
 <div class="button-container">
-<%= form.submit "投稿" , class: "link-button"%>
+<%= form.submit "wiip" , class: "link-button"%>
 </div>
 <% end %>
