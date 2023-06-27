@@ -38,10 +38,10 @@ gem "jbuilder"
 gem 'bcrypt', '~> 3.1.7'
 
 #　ログイン認証機能を追加する
-gem 'devise', '4.9.2'
+#gem 'devise', '4.9.2'
 
 # 日本語表示するために追加
-gem 'devise-i18n', '1.11.0'
+#gem 'devise-i18n', '1.11.0'
 
 gem 'orm_adapter', '0.5.0'
 
