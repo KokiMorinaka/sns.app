@@ -1,8 +1,10 @@
 <div class="button-container">
 
-<h2>windup</h2>
-<p>大学生は ”やりたい” がたくさんある</p>
-<%= image_tag "cachedImage.PNG" %><br> 
+ <div class="img">
+ <%= image_tag "cachedImage.PNG", class: "img" %><br> 
+ </div>
+ <p>大学生は ”やりたい” がたくさんある</p>
+
   <div class="actions">
     <%= submit_tag "アカウント作成", class: "submit-button1 font-bold", onclick: "window.location.href='http://localhost:3000/users/sign_up'" %>
   </div>   
