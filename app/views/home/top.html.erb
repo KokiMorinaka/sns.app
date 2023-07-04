@@ -1,7 +1,7 @@
 <div class="form-container">
 
- <div class="img">
- <%= image_tag "cachedImage.PNG", class: "img" %><br> 
+ <div class="parent">
+ <%= image_tag "cachedImage.PNG", class: "parent .img" %><br> 
  </div>
 
  <div class="p">
@@ -9,14 +9,10 @@
 </div>
 
   <div class="actions">
-    <%= submit_tag "アカウント作成", class: "submit-button1 font-bold", onclick: "window.location.href='http://localhost:3000/users/sign_up'" %>
-  </div>   
-
-  <div class="actions">
-    <%= button_tag "ログイン", class: "submit-button2 font-bold", onclick: "window.location.href='http://localhost:3000/users/sign_in'" %>
+    <%= submit_tag "アカウント作成", class: "submit-button1 font-bold", onclick: "window.location.href='http://localhost:3000'" %>
+    <%= button_tag "ログイン" , class: "submit-button2 font-bold", onclick: "window.location.href='http://localhost:3000/sessions/new'" %>
   </div>
 
   <div class="link-to">
-  <%= link_to "登録せずに利用してみる", "http://localhost:3000/users/sign_in" %>
-  </div>
+  <%= link_to "登録せずに利用してみる", "http://localhost:3000" %>
 </div>
