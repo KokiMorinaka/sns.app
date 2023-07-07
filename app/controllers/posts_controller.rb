@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
     before_action :set_post, only: [:edit, :update, :destroy]
+    before_action :current_user
   
     def index
       @posts = Post.all
@@ -44,4 +45,12 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :content)
     end
+
+    def current_user
+      if session[:user_id]
+        @user = User.find(session[:user_id])
+      else
+        redirect_to new_sessions_path
+    end
+  end
   end
