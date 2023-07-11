@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   </head>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <header class="header">
+    <div class="header-logo">
+      <div class="actions">
+        <% if session[:user_id].nil? %>
+        <%= submit_tag "ログイン", onclick: "window.location.href='http://localhost:3000/sessions/new'", class: "submit-button3 font-bold" %>
+         <% else %>
+         <%= submit_tag "ログアウト", method: :delete, onclick: "window.location.href='http://localhost:3000/sessions/new'", class: "submit-button3 font-bold" %>
+         <% end %>
+       </div>
+       <nav class="header-login" onclick="window.location.href='http://localhost:3000/home/top'">
+       <h3>windup</h3>
+      </nav>
+    </div>
+  </header>
 
   <body class="layout">
     <p class="notice"><%= notice %></p>
@@ -17,11 +35,11 @@
     <%= yield %>
     <div id="fixed-footer-menu">
       <ul>
-        <li><a href="./"><i class="fa-solid fa-house footer-icon"></i><br>
+        <li><a href="http://localhost:3000/home/top"><i class="fa-solid fa-house footer-icon"></i><br>
           </a></li>
         <li><a href="./"><i class="fa-solid fa-magnifying-glass footer-icon"></i><br>
           </a></li>
-        <li><a href="./"><i class="fa-solid fa-square-plus footer-icon"></i><br>
+        <li><a href="http://localhost:3000/posts/new"><i class="fa-solid fa-square-plus footer-icon"></i><br>
           </a></li>
         <li><a href="./"><i class="fa-solid fa-bell footer-icon"></i><br>
           </a></li>
