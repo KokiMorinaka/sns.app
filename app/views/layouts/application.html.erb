@@ -16,7 +16,7 @@
 
   <header class="header">
     <div class="header-logo">
-      <div class="actions">
+      <div class="parent-container">
         <% if session[:user_id].nil? %>
         <%= submit_tag "ログイン", onclick: "window.location.href='http://localhost:3000/sessions/new'", class: "submit-button3 font-bold" %>
          <% else %>
