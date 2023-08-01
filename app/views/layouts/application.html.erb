@@ -19,9 +19,12 @@
       <div class="parent-container">
         <% if session[:user_id].nil? %>
         <%= submit_tag "ログイン", onclick: "window.location.href='http://localhost:3000/sessions/new'", class: "submit-button3 font-bold" %>
-         <% else %>
-         <%= submit_tag "ログアウト", method: :delete, onclick: "window.location.href='http://localhost:3000/sessions/new'", class: "submit-button3 font-bold" %>
+         <% else %>        
+         <%= form_with url: session_path(session[:user_id]), method: :delete, class: "button-container" do |form| %>
+         <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+         <%= form.submit "ログアウト", class: "submit-button3 font-bold" %>
          <% end %>
+        <% end %>
        </div>
        <nav class="header-login" onclick="window.location.href='http://localhost:3000/home/top'">
        <h3>windup</h3>
