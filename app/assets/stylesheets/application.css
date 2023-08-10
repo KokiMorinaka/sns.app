@@ -193,6 +193,14 @@ body {
     margin-left: 1300px;
     margin-top: 30px;
   }
+
+  @media (max-width: 768px) {
+    /* 画面の幅が768px以下の場合に適用されるスタイル */
+    .parent-container {
+      flex-direction: column; /* ボタンを縦方向に配置 */
+      align-items: flex-end; /* ボタンを右寄せ */
+    }
+  }
   
   .link-button {
     display: inline-block;
@@ -321,6 +329,11 @@ body {
 
 .parent {
   width: 230px;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .p{
