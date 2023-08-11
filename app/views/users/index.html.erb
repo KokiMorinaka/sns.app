@@ -1,16 +1,17 @@
-<div class="form-container">
-
-  <div class="img">
-  <%= image_tag "cachedImage.PNG", class: "img" %><br> 
+<div class="main users-index">
+  <div class="container">
+    <h1 class="users-heading">ユーザー一覧</h1>
+    <% @users.each do |user| %>
+      <div class="users-index-item">
+        <!-- 指定されたHTMLを貼り付けてください -->
+        <div class="user-left">
+          <!-- <img>タグを用いて、プロフィール画像を表示してください-->
+          <img src="<%= "/user_images/#{user.image_name}" %>">
+        </div>
+        <div class="user-right">
+          <%= link_to(user.name, "/users/#{user.id}") %>
+        </div>
+      </div>
+    <% end %>
   </div>
- 
-  <div class="p">
-  <p>大学生は ”やりたい” がたくさんある</p>
- </div>
-   <div class="actions">
-    <% if session[:user_id].nil? %>
-     <%= submit_tag "ログイン", new_sessions_path, method: :get, class: "submit-button1 font-bold" %>
-     <% else %>
-     <%= button_tag "ログアウト", destroy_sessions_path,method: :delete,class: "submit-button2 font-bold" %>
-   </div>
- </div>
+</div>
