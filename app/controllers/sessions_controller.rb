@@ -5,13 +5,15 @@ class SessionsController < ApplicationController
     end
 
     def create
-        @user = User.find_by(email: params[:email], password: params[:password])
-          if @user
+        @user = User.find_by(email: params[:email]) 
+        if@user&.authenticate(params[:password])
+            #ログイン成功した場合
             session[:user_id] = @user.id
             flash[:notice] = "ログインに成功しました。"
             redirect_to root_path
+            #ログイン失敗した場合
         else
-            flash[:alert] = "ログインに失敗しました。"
+            flash[:alert] = "メールアドレスまたはパスワードが正しくありません。"
             render :new
 
         end
