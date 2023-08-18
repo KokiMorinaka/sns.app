@@ -1,10 +1,10 @@
 class PostsController < ApplicationController
-    before_action :set_post, only: [:edit, :update, :destroy]
-    before_action :current_user
+    #before_action :set_post, only: [:edit, :update, :destroy]
+    #before_action :current_user
   
     def index
       @posts = Post.all
-      @records = Record.where("date_column <= ?", Date.today) # 今日までのデータを取得
+      #@records = Record.where("date_column <= ?", Date.today) # 今日までのデータを取得
     end
 
     def new
