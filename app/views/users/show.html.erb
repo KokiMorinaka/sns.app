@@ -1,4 +1,11 @@
-<h1>ユーザー情報</h1>
-
-<p>メールアドレス：<%= @user.email %></p>
-<p><%= link_to '登録解除', unsubscribe_path(@user), method: :delete, data: { confirm: '本当に登録解除しますか？' } %></p>
+<div class="main user-show">
+    <div class="container">
+      <div class="user">
+        <!-- <img>タグを用いて、プロフィール画像を表示してください -->
+        <img src="<%= "/user_images/#{@user.image_name}" %>">
+        <h2><%= @user.name %></h2>
+        <p><%= @user.email %></p>
+        <%= link_to("編集", "/users/#{@user.id}/edit") %>
+      </div>
+    </div>
+  </div>
