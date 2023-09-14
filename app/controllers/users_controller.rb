@@ -10,11 +10,7 @@ class UsersController < ApplicationController
     def create
         @user = User.new(user_params)
         if @user.save
-          #ユーザーが保存された後、画像をアップロードする
-          if params[:users][:image_name].present?
-            @user.update(image_name: params[:users][:image_name])
             #session[:user_id] = @user.id
-        end
             redirect_to root_path, notice: "ユーザー登録が完了しました"
         else
             flash.now[:alert] = "ユーザー登録に失敗しました"
@@ -35,7 +31,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:name, :email, :password, :password_confirmation)
+        params.require(:user).permit(:name, :email, :password)
     end
     #def show
     #@user = current_user # 現在ログインしているユーザーを取得
