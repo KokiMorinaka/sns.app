@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-    #before_action :set_post, only: [:edit, :update, :destroy]
+    before_action :set_post, only: [:edit, :update, :destroy]
     before_action :current_user
   
     def index
@@ -22,9 +22,11 @@ class PostsController < ApplicationController
     end
   
     def edit
+      @post = Post.find(params[:id])
     end
   
     def update
+      @post = Post.find(params[:id])
       if @post.update(post_params)
         redirect_to posts_path
       else
@@ -44,7 +46,7 @@ class PostsController < ApplicationController
     end
   
     def post_params
-      params.require(:post).permit(:title, :content)
+      params.require(:post).permit(:title, :content, :recruitment_number, :deadline)
     end
 
     def current_user
