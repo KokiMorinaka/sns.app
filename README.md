@@ -12,3 +12,7 @@ application up and running.
 * mysql
 
 * CI/CD
+
+
+https://github.com/KokiMorinaka/sns.app/assets/121371888/6ff0b3af-95c8-4a66-b434-51f5d1027dad
+
