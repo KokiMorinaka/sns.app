@@ -18,7 +18,7 @@
     <div class="header-logo">
       <div class="parent-container">
         <% if session[:user_id].nil? %>
-        <%= submit_tag "ログイン", onclick: "window.location.href='http://localhost:3000/sessions/new'", class: "submit-button3 font-bold" %>
+        <%= submit_tag "ログイン", onclick: "window.location.href='/sessions/new'", class: "submit-button3 font-bold" %>
          <% else %>        
          <%= form_with url: session_path(session[:user_id]), method: :delete, class: "button-container" do |form| %>
          <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
@@ -44,9 +44,9 @@
           </a></li>
         <li><a href='/posts/new'><i class="fa-solid fa-square-plus footer-icon"></i><br>
           </a></li>
-        <li><a href="./"><i class="fa-solid fa-bell footer-icon"></i><br>
+        <li><a href="/posts/new"><i class="fa-solid fa-bell footer-icon"></i><br>
           </a></li>
-        <li><a href="./"><i class="fa-solid fa-circle-user footer-icon1"></i><br>
+        <li><a href="/posts/new"><i class="fa-solid fa-circle-user footer-icon1"></i><br>
           </a></li>
       </ul>
     </div>
