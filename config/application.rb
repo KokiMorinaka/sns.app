@@ -33,8 +33,5 @@ module RailsPractice
 
     # Don't generate system test files.
     config.generators.system_tests = nil
-    
-    # Add the following line to allow the host
-    config.hosts << "student-sns-app.onrender.com"
   end
 end
