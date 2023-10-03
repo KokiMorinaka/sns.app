@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'home/top'
   root 'home#top'
-  # 新規ユーザー登録
+  #  新規ユーザー登録
   get '/signup', to: 'users#new'
   post '/users', to: 'users#create'
   
