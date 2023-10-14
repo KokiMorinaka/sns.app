@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
     #before_action :set_post, only: [:edit, :update, :destroy]
     before_action :current_user, except: [:edit, :update, :destroy]
-    before_action :current_user
+    #before_action :current_user
   
     def index
       @posts = Post.all
