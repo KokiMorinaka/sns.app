@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
-    #before_action :set_post, only: [:edit, :update, :destroy]
-    before_action :current_user, except: [:index, :edit, :update, :destroy]
+    before_action :set_post, only: [:edit, :update, :destroy]
+    before_action :current_user, except: [:index, :new, :edit, :update, :destroy]
     #before_action :current_user
   
     def index
