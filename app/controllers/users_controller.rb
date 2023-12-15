@@ -25,7 +25,7 @@ class UsersController < ApplicationController
       else
         @user = current_user # ユーザー情報を取得
       end
-  end
+    end
 
 
     private
