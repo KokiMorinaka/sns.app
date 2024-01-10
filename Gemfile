@@ -57,6 +57,9 @@ gem 'spring', '4.1.1'
 
 #gem 'ransack'
 
+gem 'kaminari'
+
+
 
 # ソースコード解析
 gem 'rubocop', require: false
