@@ -1,0 +1,10 @@
+<div class="form-container">
+<h1>通知一覧</h1>
+<ul>
+  <% @notifications.each do |notification| %>
+    <li>
+      <strong><%= notification.post.title %></strong>が投稿しました。
+    </li>
+  <% end %>
+</ul>
+</div>
