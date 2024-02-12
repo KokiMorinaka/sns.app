@@ -1,6 +1,5 @@
 <div class="form-container">
   <h1>新規wiip</h1>
-
   <%= form_with model: @post, class:"button-container" do |form| %>
   <div class="form-input">
     <%= form.label :タイトル %> <%= form.text_field :title %>
@@ -8,10 +7,6 @@
 
   <div class="form-input">
     <%= form.label :募集人数 %> <%= form.number_field :recruitment_number %>
-  </div>
-
-  <div class="form-input">
-    <%= form.label :期限 %> <%= form.date_select :deadline %>
   </div>
 
   <div class="form-input">
